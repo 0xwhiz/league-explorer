@@ -19,6 +19,8 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
 }) => {
   const { data: seasonsData, isLoading, error } = useSeasons(leagueId);
 
+  console.log(seasonsData);
+
   const firstSeason = seasonsData?.seasons?.[0];
 
   return (
@@ -60,15 +62,15 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
             </div>
           )}
           
-          {firstSeason?.strSeasonBadge && (
+          {firstSeason?.strBadge && (
             <div className="text-center">
               <div className="bg-gray-700/30 rounded-2xl p-6 border border-gray-600/30 shadow-inner mb-6">
                 <img
-                  src={firstSeason.strSeasonBadge}
+                  src={firstSeason.strBadge}
                   alt={`${leagueName} season badge`}
                   className="max-w-full max-h-48 object-contain mx-auto rounded-lg shadow-lg"
                   onError={(e) => {
-                    console.log('Image failed to load:', firstSeason.strSeasonBadge);
+                    console.log('Image failed to load:', firstSeason.strBadge);
                     (e.target as HTMLImageElement).style.display = 'none';
                   }}
                 />
