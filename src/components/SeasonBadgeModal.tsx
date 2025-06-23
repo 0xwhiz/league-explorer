@@ -25,11 +25,11 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-lg mx-auto bg-gray-50 dark:bg-gray-900 backdrop-blur-md border border-gray-700 shadow-2xl rounded-2xl">
         <DialogHeader className="text-center pb-2">
-          <div className="flex items-center justify-between mb-4">
+          {/* <div className="flex items-center justify-between mb-4">
             <div className="bg-gradient-to-r from-emerald-500 to-blue-500 p-3 rounded-full">
               <Trophy className="h-8 w-8 text-white" />
             </div>
-          </div>
+          </div> */}
           <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-white leading-tight">
             {leagueName}
           </DialogTitle>
@@ -91,7 +91,7 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
                 <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Trophy className="h-8 w-8 text-yellow-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">No Season Badge Available</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">No Season Badge Available</h3>
                 <p className="text-sm text-gray-400">This league doesn't have a season badge to display</p>
               </div>
             </div>
