@@ -9,7 +9,7 @@ const LoadingSpinner: React.FC = () => {
         <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50 shadow-2xl">
           <div className="flex items-center justify-center mb-6">
             <div className="relative">
-              <Zap className="h-12 w-12 text-emerald-400 animate-pulse" />
+              {/* <Zap className="h-12 w-12 text-emerald-400 animate-pulse" /> */}
               <Loader2 className="h-8 w-8 animate-spin text-emerald-300 absolute -top-2 -right-2" />
             </div>
           </div>
