@@ -38,7 +38,7 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
         <div className="flex flex-col items-center justify-center py-6">
           {isLoading && (
             <div className="text-center">
-              <div className="bg-gray-700/50 rounded-xl p-8 border border-gray-600/50">
+              <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-8 border border-gray-600/50">
                 <div className="flex items-center justify-center mb-4">
                   <Loader2 className="h-8 w-8 animate-spin text-emerald-400" />
                 </div>

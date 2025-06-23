@@ -48,7 +48,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
       <CardHeader className="pb-3 relative z-10 flex-shrink-0">
         <div className="flex items-start justify-between mb-3">
           <div className={`${getSportColor(league.strSport)} p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center h-12`}>
-            <span className="text-lg">{league.strLeague}</span>
+            <span className="text-md">{league.strLeague}</span>
           </div>
           <Star className="h-4 w-4 text-gray-400 dark:text-gray-500 group-hover:text-emerald-400 transition-colors duration-300" />
         </div>
@@ -79,7 +79,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
           )}
         </div>
         
-        <div className="pt-4 mt-1 mt-auto border-t border-gray-200/50 dark:border-gray-700/50">
+        <div className="pt-4 mt-1 border-t border-gray-200/50 dark:border-gray-700/50">
           <div className="flex items-center justify-between text-xs">
             <span className="text-emerald-500 dark:text-emerald-400 font-medium group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors duration-300">
               Click to view season badge
