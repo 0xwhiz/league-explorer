@@ -87,7 +87,7 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
             </div>
           )}
           
-          {seasonsData && !firstSeason?.strSeasonBadge && !isLoading && (
+          {seasonsData && !firstSeason?.strBadge && !isLoading && (
             <div className="text-center">
               <div className="bg-yellow-500/10 rounded-xl p-8 border border-yellow-500/20">
                 <div className="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
