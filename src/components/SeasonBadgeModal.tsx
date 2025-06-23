@@ -29,12 +29,6 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
             <div className="bg-gradient-to-r from-emerald-500 to-blue-500 p-3 rounded-full">
               <Trophy className="h-8 w-8 text-white" />
             </div>
-            <button
-              onClick={onClose}
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <X className="h-6 w-6" />
-            </button>
           </div>
           <DialogTitle className="text-2xl font-bold text-white leading-tight">
             {leagueName}

@@ -47,8 +47,8 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
       
       <CardHeader className="pb-3 relative z-10 flex-shrink-0">
         <div className="flex items-start justify-between mb-3">
-          <div className={`${getSportColor(league.strSport)} p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center w-12 h-12`}>
-            {/* <span className="text-xl">{getSportIcon(league.strSport)}</span> */}
+          <div className={`p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center w-12 h-12`}>
+            <span className="text-xl">{' '}</span>
           </div>
           <Star className="h-4 w-4 text-gray-400 dark:text-gray-500 group-hover:text-emerald-400 transition-colors duration-300" />
         </div>
@@ -61,7 +61,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
         <div className="space-y-4 flex-grow">
           <div className="flex items-center justify-between">
             <span className={`text-xs font-semibold text-white px-3 py-1.5 rounded-full ${getSportColor(league.strSport)} shadow-sm`}>
-              {getSportIcon(league.strSport)}{league.strSport}
+              {getSportIcon(league.strSport)}{' '}{league.strSport}
             </span>
             <div className="text-xs text-gray-500 dark:text-gray-400 bg-gray-200/50 dark:bg-gray-700/50 px-2 py-1 rounded-full border border-gray-300 dark:border-gray-600">
               #{league.idLeague}
