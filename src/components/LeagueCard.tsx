@@ -79,7 +79,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
           )}
         </div>
         
-        <div className="pt-4 mt-auto border-t border-gray-200/50 dark:border-gray-700/50">
+        <div className="pt-4 mt-1 mt-auto border-t border-gray-200/50 dark:border-gray-700/50">
           <div className="flex items-center justify-between text-xs">
             <span className="text-emerald-500 dark:text-emerald-400 font-medium group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors duration-300">
               Click to view season badge
