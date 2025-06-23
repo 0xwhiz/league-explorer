@@ -47,14 +47,14 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
       
       <CardHeader className="pb-3 relative z-10 flex-shrink-0">
         <div className="flex items-start justify-between mb-3">
-          <div className={`p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center w-12 h-12`}>
-            <span className="text-xl">{' '}</span>
+          <div className={`${getSportColor(league.strSport)} p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center w-12 h-12`}>
+            <span className="text-lg">{league.strLeague}</span>
           </div>
           <Star className="h-4 w-4 text-gray-400 dark:text-gray-500 group-hover:text-emerald-400 transition-colors duration-300" />
         </div>
-        <CardTitle className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors duration-300 min-h-[3.5rem] flex items-center">
+        {/* <CardTitle className="text-lg font-bold text-gray-900 dark:text-white line-clamp-2 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors duration-300 min-h-[3.5rem] flex items-center">
           {league.strLeague}
-        </CardTitle>
+        </CardTitle> */}
       </CardHeader>
       
       <CardContent className="pt-0 relative z-10 flex-grow flex flex-col">

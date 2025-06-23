@@ -30,7 +30,7 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
               <Trophy className="h-8 w-8 text-white" />
             </div>
           </div>
-          <DialogTitle className="text-2xl font-bold text-white leading-tight">
+          <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-white leading-tight">
             {leagueName}
           </DialogTitle>
         </DialogHeader>
@@ -42,8 +42,8 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
                 <div className="flex items-center justify-center mb-4">
                   <Loader2 className="h-8 w-8 animate-spin text-emerald-400" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">Loading Season Badge</h3>
-                <p className="text-gray-400">Fetching the latest season information...</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Loading Season Badge</h3>
+                <p className="text-gray-400 dark:text-white">Fetching the latest season information...</p>
               </div>
             </div>
           )}
@@ -55,7 +55,7 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
                   <Award className="h-8 w-8 text-red-400" />
                 </div>
                 <h3 className="text-lg font-semibold text-red-400 mb-2">Failed to Load Badge</h3>
-                <p className="text-sm text-gray-400">Please try again later</p>
+                <p className="text-sm text-gray-400 dark:text-white">Please try again later</p>
               </div>
             </div>
           )}
