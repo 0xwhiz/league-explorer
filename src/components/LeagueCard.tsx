@@ -47,7 +47,7 @@ const LeagueCard: React.FC<LeagueCardProps> = ({ league, onClick }) => {
       
       <CardHeader className="pb-3 relative z-10 flex-shrink-0">
         <div className="flex items-start justify-between mb-3">
-          <div className={`${getSportColor(league.strSport)} p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center w-12 h-12`}>
+          <div className={`${getSportColor(league.strSport)} p-2.5 rounded-lg text-white shadow-lg flex items-center justify-center h-12`}>
             <span className="text-lg">{league.strLeague}</span>
           </div>
           <Star className="h-4 w-4 text-gray-400 dark:text-gray-500 group-hover:text-emerald-400 transition-colors duration-300" />
