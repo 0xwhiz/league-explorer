@@ -23,7 +23,7 @@ const SeasonBadgeModal: React.FC<SeasonBadgeModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-lg mx-auto bg-gray-800 backdrop-blur-md border border-gray-700 shadow-2xl rounded-2xl">
+      <DialogContent className="max-w-lg mx-auto bg-gray-50 dark:bg-gray-900 backdrop-blur-md border border-gray-700 shadow-2xl rounded-2xl">
         <DialogHeader className="text-center pb-2">
           <div className="flex items-center justify-between mb-4">
             <div className="bg-gradient-to-r from-emerald-500 to-blue-500 p-3 rounded-full">
