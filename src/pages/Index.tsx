@@ -71,11 +71,11 @@ const Index = () => {
           </div>
           
           <div className="text-center mb-6 sm:mb-8">
-            <div className="flex items-center justify-center mb-4 sm:mb-6">
+            {/* <div className="flex items-center justify-center mb-4 sm:mb-6">
               <div className="bg-emerald-500/10 p-3 sm:p-4 rounded-full border border-emerald-500/20">
                 <Zap className="h-8 w-8 sm:h-10 sm:w-10 text-emerald-400" />
               </div>
-            </div>
+            </div> */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 tracking-tight">
               Sports Leagues
             </h1>
